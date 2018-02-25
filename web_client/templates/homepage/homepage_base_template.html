@@ -2,5 +2,46 @@
 {% load static %}
 
 {% block content %}
-    <p>Hello!</p>
+
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white border-bottom box-shadow" style="height: 70px;">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01" style="padding-right: 1rem">
+            <a class="navbar-brand" href="#" style="padding-left: 1rem">Career Finder</a>
+            <nav class="navbar-nav mr-auto"></nav>
+
+            <nav class="my-2 my-md-0 mr-md-3">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 2</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="btn btn-outline-primary" type="submit">New search</button>
+
+        </div>
+    </nav>
+
+    <div id="navbar-container"></div>
+    <div id="main-container" style="padding-top: 5rem">
+        <p>Hello!</p>
+    </div>
+
+{% endblock %}
+
+{% block customscript %}
+    <script>
+        $(document).ready(function () {
+            {#load_content('#navbar-container', '{% url 'load_navbar' %}', {});#}
+            {#load_content('#main-container', '{% url 'load_main_container' %}', {});#}
+        });
+    </script>
 {% endblock %}
