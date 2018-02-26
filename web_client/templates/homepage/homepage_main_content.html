@@ -1,1 +1,120 @@
-<p>Hello!</p>
+<div class="jumbotron text-center bg-white" style="height: 25rem">
+    <h1 class="display-4">Find your next job!</h1>
+    <p class="lead">Welcome to clutter-free job search service with one-click application process.</p>
+
+    <p>We provide simplified tools to effectively connect employers with professionals to boost your productivity <br>
+        and make looking for a new job more pleasant and stress-free.</p>
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#" role="button">Start new search</a>
+    </p>
+    <hr class="my-4">
+    <h4>Check out latest job postings:</h4>
+</div>
+
+
+<div class="card-deck" style="padding-bottom: 3rem !important;">
+    {#    {% for post in posts %}#}
+    <div class="card text-center box-shadow">
+        <div class="card-header">
+            <h4>Python developer</h4>
+        </div>
+        <div class="card-body">
+            <h1 class="card-title pricing-card-title">$2300
+                <small class="text-muted">/ mo</small>
+            </h1>
+            <h5 class="card-title">Lower Silesian, Poland</h5>
+            <p class="card-text">Full-stack solutions in web development.</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Show details
+            </button>
+        </div>
+    </div>
+
+    <div class="card text-center box-shadow">
+        <div class="card-header">
+            <h4>Mechanical Engineer</h4>
+        </div>
+        <div class="card-body">
+            <h1 class="card-title pricing-card-title">$4500
+                <small class="text-muted">/ mo</small>
+            </h1>
+            <h5 class="card-title">Manchester, United Kingdom</h5>
+            <p class="card-text">Senior constructing technician with knowledge of CAD</p>
+            <a href="#" class="btn btn-primary">Show details</a>
+        </div>
+    </div>
+
+    <div class="card text-center box-shadow">
+        <div class="card-header">
+            <h4>Concierge</h4>
+        </div>
+        <div class="card-body">
+            <h1 class="card-title pricing-card-title">$1800
+                <small class="text-muted">/ mo</small>
+            </h1>
+            <h5 class="card-title">Berlin, Germany</h5>
+            <p class="card-text">Work at prestigious 5-star hotel in old town.</p>
+            <a href="#" class="btn btn-primary">Show details</a>
+        </div>
+    </div>
+    {#    {% endfor %}#}
+
+</div>
+
+<footer class="border-top" style="padding-top: 3rem !important;">
+    <div class="row">
+
+        <div class="col-12 col-md">
+            {#            <img class="mb-2" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" height="24" width="24">#}
+            <small>CareerFinder</small>
+            <small class="d-block mb-3 text-muted">© 2018</small>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="#">For Recruiters</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="#">Analytics</a></li>
+                <li><a class="text-muted" href="#">Integration</a></li>
+                <li><a class="text-muted" href="#">Marketing</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="#">Team</a></li>
+                <li><a class="text-muted" href="#">Locations</a></li>
+                <li><a class="text-muted" href="#">Privacy</a></li>
+                <li><a class="text-muted" href="#">Terms</a></li>
+            </ul>
+        </div>
+
+    </div>
+</footer>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Apply</button>
+            </div>
+        </div>
+    </div>
+</div>

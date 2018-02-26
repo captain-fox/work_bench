@@ -12,8 +12,11 @@ class Navbar(TemplateView):
     template_name = 'homepage/navbar.html'
 
 
-class MainContent(View):
+class MainContent(TemplateView):
     template_name = 'homepage/homepage_main_content.html'
 
-    def get(self, request):
-        return render(request, self.template_name, {})
+    def get_context_data(self, **kwargs):
+        context = super(MainContent, self).get_context_data(**kwargs)
+        context['posts'] = range(0, 3)
+        return context
+
