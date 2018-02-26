@@ -7,6 +7,13 @@ from django.views.generic import View, TemplateView
 class Homepage(TemplateView):
     template_name = 'homepage/homepage_base_template.html'
 
-    def get_context_data(self, **kwargs):
-        return super().get_context_data(**kwargs)
 
+class Navbar(TemplateView):
+    template_name = 'homepage/navbar.html'
+
+
+class MainContent(View):
+    template_name = 'homepage/homepage_main_content.html'
+
+    def get(self, request):
+        return render(request, self.template_name, {})
