@@ -20,3 +20,12 @@ class MainContent(TemplateView):
         context['posts'] = range(0, 3)
         return context
 
+
+class Search(View):
+    template_name = 'search/search_base_template.html'
+
+    def get(self, request):
+        return render(request, self.template_name, {})
+
+    def post(self, request):
+        return render(request, '', {})

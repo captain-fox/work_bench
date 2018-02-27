@@ -5,7 +5,7 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01" style="padding-right: 1rem">
-        <a class="navbar-brand" href="#" style="padding-left: 1rem">Career Finder</a>
+        <a class="navbar-brand" href="{% url 'homepage' %}" style="padding-left: 1rem">Career Finder</a>
         <nav class="navbar-nav mr-auto"></nav>
 
         <nav class="my-2 my-md-0 mr-md-3">
@@ -19,7 +19,7 @@
             </ul>
         </nav>
 
-        <button class="btn btn-outline-primary" type="submit">New search</button>
+        <a class="btn btn-outline-primary" href="{% url 'search' %}">New search</a>
 
     </div>
 

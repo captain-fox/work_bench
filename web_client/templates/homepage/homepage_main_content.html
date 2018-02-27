@@ -1,11 +1,11 @@
-<div class="jumbotron text-center bg-white" style="height: 25rem">
+<div class="jumbotron text-center bg-white">
     <h1 class="display-4">Find your next job!</h1>
     <p class="lead">Welcome to clutter-free job search service with one-click application process.</p>
 
     <p>We provide simplified tools to effectively connect employers with professionals to boost your productivity <br>
         and make looking for a new job more pleasant and stress-free.</p>
     <p class="lead">
-        <a class="btn btn-primary btn-lg" href="#" role="button">Start new search</a>
+        <a class="btn btn-primary btn-lg" href="{% url 'search' %}" role="button">Start new search</a>
     </p>
     <hr class="my-4">
     <h4>Check out latest job postings:</h4>
@@ -100,7 +100,7 @@
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>

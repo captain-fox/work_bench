@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div id="navbar-container"></div>
+    <div id="main-container" style="padding-top: 5rem">
+    <p>Hello!</p>
+    </div>
+
+{% endblock %}
+
+{% block customscript %}
+    <script>
+        $(document).ready(function () {
+            {#load_content('#navbar-container', '{% url 'load_navbar' %}', {});#}
+            {#load_content('#main-container', '{% url 'load_main_content' %}', {});#}
+        });
+    </script>
+{% endblock %}
